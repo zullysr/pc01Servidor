@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class BusquedaResource {
 
 	@RequestMapping("/busca/{id}")
-	public String buscar(@RequestParam Integer id) {
+	public String buscar(@PathVariable Integer id) {
 		String nombre = "";
 		switch(id) {
 		case 1: nombre = "Juan"; break;
